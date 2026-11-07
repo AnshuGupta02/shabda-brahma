@@ -1,0 +1,145 @@
+/* =========================
+   RESULT CARD
+========================= */
+
+.result-card {
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e8dfd1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Category and Subcategory */
+
+.result-card-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.result-category {
+  display: inline-block;
+  color: #a17b48;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.result-subcategory {
+  margin: 4px 0;
+  color: #756b60;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Quote Text */
+
+.result-quote {
+  margin: 12px 0;
+  color: #493625;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-line;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* Tags */
+
+.result-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0;
+  max-height: none;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+.result-tag {
+  padding: 4px 9px;
+  border-radius: 20px;
+  background-color: #f2eee6;
+  color: #795b39;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* Author and Source */
+
+.result-details {
+  padding-top: 12px;
+  border-top: 1px solid #eee7dc;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.result-details p {
+  margin: 5px 0;
+  color: #756b60;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.result-details strong {
+  color: #493625;
+}
+
+.result-details a {
+  color: #a17b48;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.result-details a:hover {
+  color: #795b39;
+  text-decoration: underline;
+}
+
+/* Read More */
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding-top: 4px;
+  color: #a17b48;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.read-more:hover {
+  color: #795b39;
+  text-decoration: underline;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .result-card {
+    height: 380px;
+    padding: 20px;
+  }
+
+  .result-quote {
+    font-size: 15px;
+  }
+
+  .result-subcategory {
+    font-size: 13px;
+  }
+}

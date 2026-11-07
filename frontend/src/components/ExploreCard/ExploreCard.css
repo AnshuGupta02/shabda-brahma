@@ -1,0 +1,35 @@
+.explore-card {
+  text-align: left;
+  width: 100%;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e8e2d9;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.explore-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.explore-card h3 {
+  font-size: 20px;
+  color: #493c2d;
+  margin-bottom: 12px;
+}
+
+.explore-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #777;
+  margin-bottom: 18px;
+}
+
+.explore-card-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #936c3c;
+}

@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: #fff;
+}
+
+.navbar-brand img {
+  height: 55px;
+  width: auto;
+  display: block;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #493c2d;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: #936c3c;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar-brand img {
+    height: 42px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+  }
+}

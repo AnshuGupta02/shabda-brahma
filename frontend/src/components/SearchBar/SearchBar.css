@@ -1,0 +1,82 @@
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 7px;
+  background-color: #ffffff;
+  border: 1px solid #e4d9c8;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(65, 45, 25, 0.06);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-bar:focus-within {
+  border-color: #b18b55;
+  box-shadow: 0 6px 24px rgba(65, 45, 25, 0.10);
+}
+
+/* Input field */
+
+.search-bar input {
+  flex: 1;
+  min-width: 0;
+  padding: 15px 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #493625;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+.search-bar input::placeholder {
+  color: #a49a8e;
+}
+
+/* Search button */
+
+.search-bar button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 7px;
+  background-color: #795b39;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: #60452b;
+}
+
+.search-bar button:focus-visible {
+  outline: 2px solid #b18b55;
+  outline-offset: 3px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 480px) {
+  .search-bar {
+    padding: 5px;
+  }
+
+  .search-bar input {
+    padding: 13px 10px;
+    font-size: 13px;
+  }
+
+  .search-bar button {
+    padding: 13px 17px;
+    font-size: 13px;
+  }
+}
