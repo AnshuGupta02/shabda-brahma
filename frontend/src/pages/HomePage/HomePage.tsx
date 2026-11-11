@@ -12,6 +12,10 @@ import './HomePage.css'
 
 const RESULTS_PER_PAGE = 12
 
+function normalizeSearchText(text: string) {
+  return text.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase()
+}
+
 const categories = [
   {
     title: 'Poems',
@@ -89,18 +93,18 @@ useEffect(() => {
 }, [location.hash])
 
   const filteredItems = mockData.filter((item) => {
-    const searchableContent = [
-      item.text,
-      item.author,
-      item.source,
-      item.category,
-      item.subcategory,
-      ...item.tags,
-    ]
-      .join(' ')
-      .toLowerCase()
+    const searchableContent = normalizeSearchText(
+      [
+        item.text,
+        item.author,
+        item.source,
+        item.category,
+        item.subcategory,
+        ...item.tags,
+      ].join(' '),
+    )
 
-    return searchableContent.includes(searchQuery.toLowerCase())
+    return searchableContent.includes(normalizeSearchText(searchQuery))
   })
 
   const totalPages = Math.ceil(filteredItems.length / RESULTS_PER_PAGE)
