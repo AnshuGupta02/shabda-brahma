@@ -40,7 +40,7 @@ O Gurudeva, please be merciful to me.`,
   sourceUrl: 'https://youtu.be/VIBcs6CS3is?si=hMv7f-Q5QXFdPCKo&t=328',
   category: 'Poems',
 subcategory: "Śrī Rādhā's Chin",
-  tags: ['Radha', 'Krishna', 'Madhura Rasa', 'Pastimes', 'Chin'],
+  tags: ['Radha', 'Krishna', 'Madhurya Rasa', 'Pastimes', 'Chin'],
 },
 {
   id: 3,

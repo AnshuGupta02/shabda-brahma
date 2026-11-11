@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 import Navbar from '../../components/Navbar/Navbar'
@@ -79,6 +79,14 @@ const [currentPage, setCurrentPage] = useState(
 )
 
 const navigate = useNavigate()
+
+useEffect(() => {
+  const sectionId = location.hash.slice(1)
+
+  if (sectionId) {
+    document.getElementById(sectionId)?.scrollIntoView()
+  }
+}, [location.hash])
 
   const filteredItems = mockData.filter((item) => {
     const searchableContent = [
