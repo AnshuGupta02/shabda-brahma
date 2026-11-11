@@ -13,16 +13,15 @@ export interface LiteraryItem {
 export const mockData: LiteraryItem[] = [
   {
     id: 1,
-    text: `O Gurudeva, you are the moonlight that illuminates the darkness of my life.
+    text: `O Shree Guru, you are the moonlight that illuminates the darkness of my life.
 
-Lost in illusion and ignorance, I wandered without knowing the way.
-But the rays of your words awakened within me a deep longing for the nectar held within the two syllables of Krishna's name.
+My life was covered by illusion and ignorance, but the rays of your words awakened in me an overwhelming longing for the nectar held within the two syllables of Krishna's name.
 
-Day and night, your lips softly murmur the holy names of the Lord, tasting the highest nectar of devotion.
+Day and night, your lips softly murmur His holy names, tasting the highest nectar of devotion.
 
-The moment your blessed hand rests upon my head, may I behold the divine beauty of the eternal couple.
+The moment you place your blessed hand upon my head, I shall behold the beauty of the divine couple.
 
-From forest to forest, from village to village, from city to city, I wander, calling out your name.
+Wandering from forest to forest, from village to village, and from city to city, I call out your name.
 
 O Gurudeva, please be merciful to me.`,
     author: 'Vancharidas',
